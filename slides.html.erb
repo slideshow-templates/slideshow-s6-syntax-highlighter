@@ -7,11 +7,14 @@
 <meta name="generator" content="<%= @headers['generator'] %>">
 <meta name="author"    content="<%= @headers['author']%>" >
 
+<!-- SyntaxHighlighter (sh) style sheet; goes first so we can override styles if needed -->
+<!-- todo: add theme-ing support -->
+<link rel="stylesheet" href="highlighter/shCoreDefault.css">
 
 <!-- S6 style sheet links -->
-<link rel="stylesheet" href="<%= "#{@name}.css" %>" type="text/css" media="projection" id="styleProjection">
-<link rel="stylesheet" href="s6/screen.css" type="text/css" media="screen" id="styleScreen">
-<link rel="stylesheet" href="s6/print.css"  type="text/css" media="print">
+<link rel="stylesheet" href="<%= "#{@name}.css" %>"  media="projection" id="styleProjection">
+<link rel="stylesheet" href="s6/screen.css"          media="screen" id="styleScreen">
+<link rel="stylesheet" href="s6/print.css"           media="print">
 
 <!-- S6 JS -->
 <script src="s6/jquery.js"></script>
@@ -47,8 +50,6 @@
 <script src="highlighter/shBrushVb.js"></script>
 <script src="highlighter/shBrushXml.js"></script>
 
-<!-- todo: add theme-ing support -->
-<link type="text/css" rel="stylesheet" href="highlighter/shCoreDefault.css"/>
 
 <script type="text/javascript">
 
