@@ -1,5 +1,12 @@
-Slide Show (S9) Template Pack - S6 Syntax
-=========================================
+# S6 Syntax - Slide Show (S9) Template Pack
+
+## What's Slide Show (S9)?
+
+A Ruby gem that lets you create slide shows and author slides in plain text
+using a wiki-style markup language that's easy-to-write and easy-to-read.
+More [Slide Show (S9) Project Site »](http://slideshow-s9.github.io)
+
+## Intro
 
 The [S6 Blank](http://github.com/geraldb/s6) package bundled up into 
 a Slide Show (S9) template pack. Includes [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter) - a free, open source
@@ -9,37 +16,28 @@ syntax highlighter in JavaScript.
 
 If you want to try it yourself, install (fetch) the new template pack. Issue the command:
 
-    $ slideshow -f http://github.com/geraldb/slideshow-s6-syntax-highlighter/raw/master/s6syntax.txt
+    $ slideshow install s6syntax
 
-To check if the new template got installed, use the `-l/--list` switch/command:
+Or as an alternative clone the template pack using `git`. Issue the commands:
 
-    $ slideshow -l
+    $ cd ~/.slideshow/templates
+    $ git clone git://github.com/slideshow-s9/slideshow-s6-syntax-highlighter.git
+
+To check if the new template got installed, use the `list` command:
+
+    $ slideshow list
 
 Listing something like:
 
     Installed templates include:
-       s6syntax.txt (/home/gerald/.slideshow/templates/s6syntax/s6syntax.txt)
+       s6syntax.txt (~/.slideshow/templates/s6syntax/s6syntax.txt)
 
 Now you're ready to use it using the `-t/--template` switch. Example:
 
-    $ slideshow -t s6syntax.txt tutorial
+    $ slideshow build tutorial -t s6syntax.txt
 
-That's it. 
+That's it.
 
-
-## Troubleshooting 
-
-Trouble downloading? Do you have a direct internet connection? If not, configure your proxy using
-the `HTTP_PROXY` environment variable. Sample:
-
-    HTTP_PROXY=http://234.445.454:4341
-
-Or with user credentials (that is, login and password):
-
-    HTTP_PROXY=http://gerald:topsecret@234.445.454:4341
-
-If all fails, you can always download the template pack on your own (using lets say `git` itself)
-and than move the souces into your templates folder (that is, `~/.slideshow/templates`).
 
 ## Questions? Comments?
 
