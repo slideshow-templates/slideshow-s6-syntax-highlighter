@@ -34,7 +34,7 @@ Listing something like:
 
 Now you're ready to use it using the `-t/--template` switch. Example:
 
-    $ slideshow build tutorial -t s6syntax.txt
+    $ slideshow build tutorial -t s6syntax
 
 That's it.
 
